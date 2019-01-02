@@ -1,0 +1,24 @@
+
+// Permet de modifier les variables d'environnment où sont installer les packages et environement de anaconda
+export CONDA_ENVS_PATH=/media/greg/EXTGREG/telechargement/conda/.conda/envs
+export CONDA_PKGS_DIRS=/media/greg/EXTGREG/anaconda/pkgs
+conda config --add envs_dirs /media/greg/EXTGREG/telechargement/conda/.conda/envs
+conda config --add pkgs_dirs /media/greg/EXTGREG/telechargement/conda/.conda/pkgs
+
+// Création d'un nouvelle environnement avec tensorflow
+conda create --prefix /media/greg/EXTGREG/tensorflowGreg python=3.5 anaconda
+
+conda activate tensorflowGreg
+
+conda install theano
+
+pip install tensorflow
+pip install keras
+
+conda update --all && conda clean -p
+
+
+Pour lancer spider utiliser :
+conda activate tensorflowGreg
+anaconda-navigator
+lancer spider
