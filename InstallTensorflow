@@ -21,4 +21,4 @@ conda update --all && conda clean -p
 Pour lancer spider utiliser :
 conda activate tensorflowGreg
 anaconda-navigator
-lancer spider
+lancer spyder
